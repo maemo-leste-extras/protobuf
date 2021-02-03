@@ -211,7 +211,7 @@ Description: Python 3 bindings for protocol buffers
  you to use those classes in your programs.
 
 Package: libprotobuf-java
-Architecture: all
+Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}
 Section: java
@@ -233,7 +233,7 @@ Description: Java bindings for protocol buffers
  you to use those classes in your programs.
 
 Package: elpa-protobuf-mode
-Architecture: all
+Architecture: any
 Depends: ${misc:Depends}, ${elpa:Depends}
 Section: editors
 Description: Emacs addon for editing protocol buffers
