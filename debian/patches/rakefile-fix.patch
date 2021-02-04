@@ -1,0 +1,13 @@
+diff --git a/ruby/Rakefile b/ruby/Rakefile
+index 2aa7743..d124dc5 100644
+--- a/ruby/Rakefile
++++ b/ruby/Rakefile
+@@ -34,7 +34,7 @@ unless ENV['IN_DOCKER'] == 'true'
+     output_file = "lib/" + proto_file.sub(/\.proto$/, "_pb.rb")
+     genproto_output << output_file
+     file output_file => input_file do |file_task|
+-      sh "../src/protoc -I../src --ruby_out=lib #{input_file}"
++      sh "mkdir -p lib && ../src/protoc -I../src --ruby_out=lib #{input_file}"
+     end
+   end
+ end

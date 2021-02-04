@@ -9,3 +9,4 @@ x32.patch
 32bit.patch
 python3ify_examples.patch
 no_errorprone.patch
+rakefile-fix.patch
