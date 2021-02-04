@@ -121,6 +121,8 @@ override_dh_auto_clean-indep:
 
 override_dh_auto_install-arch:
 	dh_auto_install --arch
+	find $(CURDIR)/debian/tmp/usr/lib/ \
+		-name '*.la' -delete
 
 	# Python3 install
 	set -e; \
